@@ -24,7 +24,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
 - Item 1
 - Item 2
-- Item 3
+- PHP Manager
 - Item 4
 - Item 5
 
