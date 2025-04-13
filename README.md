@@ -94,10 +94,9 @@ Now, download and install MySQL 5.5.62 (mysql-5.5.62-win32.msi) from the install
 <img src="https://i.imgur.com/NcdfwQp.jpeg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Before installing osTicket, configurations need to be made within IIS. Open IIS as an admin and select PHP Manager. Within PHP Manager, select Register new PHP version. Select Browse and select the PHP CGI executable file (php-cgi.exe) within the PHP folder created earlier in the lab. After registering the PHP version, reload the IIS server within the management console.
+Before installing osTicket, configurations need to be made within IIS. Open IIS as an admin and select PHP Manager. Within PHP Manager, select Register a new PHP version. Select Browse and select the PHP CGI file within the PHP folder created earlier in the lab. After registering the PHP version, reload the IIS server within the management console.
 </p>
 <br />
-
 
 <p>
 <img src="https://i.imgur.com/2u4beoc.jpeg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
