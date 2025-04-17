@@ -52,7 +52,7 @@ After enabling Internet Information Services (IIS), download and install PHP Man
 <img src="https://i.imgur.com/9kPWqbs.jpeg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-After installing the Rewrite Module, create a new folder called C:\PHP on the Windows (C:) drive. This folder will be used to unzip the files from the PHP Manager 7.3.8 (php-7.3.8-nts-Win32-VC15-x86.zip) folder downloaded from the installation files. Extract all contents from the zip folder into the C:\PHP folder.
+Once the Rewrite Module has been installed, create a new directory named C:\PHP on the Windows (C:) drive. This directory will serve as the destination for extracting the contents of the PHP Manager 7.3.8 archive (php-7.3.8-nts-Win32-VC15-x86.zip) downloaded from the installation files. Unzip all files from the archive into the C:\PHP folder.
 </p>
 <br />
 
