@@ -126,7 +126,13 @@ Within the IIS console, navigate to Sites > Default Web Site > osTicket. Click "
 <img src="https://i.imgur.com/NQp2CyX.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Before continuing to install osTicket, a file needs to be renamed as well as have its permissions changed. From C:\inetpub\wwwroot\osTicket\include, rename ost-sampleconfig.php to ost-config.php. The newly named ost-config.php will have its permissions changed. Open its Properties and change the following permissions: Disable inheritence -> Remove All and New Permissions -> Everyone -> All.
+Before proceeding with the osTicket installation, a configuration file must be renamed and its permissions updated. Navigate to C:\inetpub\wwwroot\osTicket\include and rename the file ost-sampleconfig.php to ost-config.php.
+
+Once renamed, right-click on ost-config.php and select Properties. Under the Security tab, make the following changes:
+
+1. Click Disable inheritance and choose Remove all inherited permissions from this object.
+2. Click Add, enter Everyone as the user/group, and assign Full control permissions.
+These changes ensure that osTicket has the appropriate access needed during installation.
 </p>
 <br />
 
@@ -139,7 +145,7 @@ Before continuing to install osTicket, a file needs to be renamed as well as hav
 <img src="https://i.imgur.com/LLNnrz3.jpeg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-From the installation files, download and install HeidiSQL. Create a new session with HeidiSQL and enter the password used in the installation of MySQL earlier. Within the new session, right-click on Unnamed and create a new database named osTicket.
+Download and install HeidiSQL from the provided installation files. Once installed, launch HeidiSQL and create a new session. In the session settings, enter the password you used during the MySQL installation. After connecting, right-click on Unnamed in the left-hand panel and select Create new > Database. Name the new database osTicket, then click OK to confirm.
 </p>
 <br />
 
@@ -148,12 +154,16 @@ From the installation files, download and install HeidiSQL. Create a new session
 </p>
 <p>
   
-Within osTicket browser window, enter the necessary details to set up osTicket. For the MySQL database, use the credentials used for MySQL and HeidiSQL.
+Within the osTicket installation page in your browser, fill in the required details to complete the setup process. This includes configuring the system settings, admin user account, and database information. For the MySQL database section, use the same credentials that were set up earlier for MySQL and HeidiSQL—specifically, the username and password you configured during the MySQL installation.
 
 <p>
 <img src="https://i.imgur.com/X9RlHQY.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Once osTicket has been successfully installed, a few post-installation cleanup steps are required before using the application.
+
+First, delete the setup folder located at C:\inetpub\wwwroot\osTicket. Then, navigate back to C:\inetpub\wwwroot\osTicket\include and modify the permissions for the ost-config.php file. At this point, the file should no longer have Full Control permissions granted to Everyone. Update the permissions so that the file is set to Read-only access.
+
+These steps help secure your osTicket installation and prevent unauthorized modifications.
 </p>
 <br />
