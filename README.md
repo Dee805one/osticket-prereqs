@@ -75,8 +75,9 @@ Download and install VC_redist.x86.exe from the installation files.
 <p>
 <img src="https://i.imgur.com/TjJeME0.jpeg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
-<p>
-Now, download and install MySQL 5.5.62 (mysql-5.5.62-win32.msi) from the installation files. Within the MySQL setup wizard, click "I agree" and select a Typical install. Launch the Configuration Wizard after the installation. Then Select Standard Configuration and select Install As Windows Service and make sure Launch the MySQL Server automatically is checked. For credentials, the username will be root and the password is also root. In a practical setting, the credentials will not be basic to where they can be easily guessed, but for the purposes of this lab, the standard credentials root and root will do.
+<p> 
+Next, download and install MySQL 5.5.62 (mysql-5.5.62-win32.msi) from the provided installation files. During the setup process, accept the license agreement and choose the Typical installation option. Once the installation is complete, launch the MySQL Configuration Wizard. Select Standard Configuration, then ensure that Install As Windows Service is selected and that Launch the MySQL Server automatically is checked.
+For the login credentials, use root as both the username and password. While these credentials are intentionally simple for the purposes of this lab, it is important to note that in a real-world environment, stronger and less predictable login details should be used to maintain security.
 </p>
 <br />
 
@@ -94,7 +95,7 @@ Now, download and install MySQL 5.5.62 (mysql-5.5.62-win32.msi) from the install
 <img src="https://i.imgur.com/NcdfwQp.jpeg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Before installing osTicket, configurations need to be made within IIS. Open IIS as an admin and select PHP Manager. Within PHP Manager, select Register a new PHP version. Select Browse and select the PHP CGI file within the PHP folder created earlier in the lab. After registering the PHP version, reload the IIS server within the management console.
+Before installing osTicket, certain configurations must be made within IIS. Start by opening Internet Information Services (IIS) as an administrator and navigating to PHP Manager. In PHP Manager, select Register new PHP version, then click Browse and locate the php-cgi.exe file inside the PHP folder created earlier in the lab. Once the PHP version has been successfully registered, reload the IIS server from within the management console to apply the changes. 
 </p>
 <br />
 
@@ -102,7 +103,7 @@ Before installing osTicket, configurations need to be made within IIS. Open IIS 
 <img src="https://i.imgur.com/2u4beoc.jpeg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-From the installation files, download osTicket v1.15.8. Extract and copy the "upload" folder to the following path: c:\inetpub\wwwroot. Within the c:\inetpub\wwwroot folder, rename "upload" to "osTicket." Reload the IIS server afterwards.
+Download osTicket v1.15.8 from the provided installation files. Once downloaded, extract the contents and copy the upload folder to the following directory: C:\inetpub\wwwroot. Inside the wwwroot folder, rename the upload folder to osTicket. After completing these steps, reload the IIS server to apply the changes.
   <p>
 <img src="https://i.imgur.com/3hzyBJE.jpeg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
@@ -112,7 +113,7 @@ From the installation files, download osTicket v1.15.8. Extract and copy the "up
 <img src="https://i.imgur.com/G4tReb1.jpeg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Within the IIS console, browse to Sites -> Default -> osTicket. Click "Browse *:80" and the installation page for osTicket will now show up. Some extensions are not enabled and they will be enabled with the IIS console before installing osTicket. To do so, click on PHP Manager while in the osTicket menu in IIS. Click on "Enable or disable an extension." Enable the following extentions: php_imap.dll, php_intl.dll, php_opcache.dll.
+Within the IIS console, navigate to Sites > Default Web Site > osTicket. Click "Browse *:80" to launch the osTicket installation page in your default web browser. At this point, you may notice that some required PHP extensions are not yet enabled. These will need to be activated before proceeding with the installation.To enable the necessary extensions, ensure you're still within the osTicket section in IIS and open PHP Manager. Click on "Enable or disable an extension", then enable the following PHP extensions: php_imap.dll, php_intl.dll, and php_opcache.dll.
 </p>
 <br />
 
