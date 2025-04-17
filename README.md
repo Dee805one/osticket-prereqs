@@ -36,7 +36,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 <img src="https://i.imgur.com/TqJTb1K.jpeg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Before installing any files, Internet Information Services (IIS) needs to be enabled. We are installing osTicket on a virtual machine (VM) using Azure and it needs IIS in order to function. To turn on IIS, open the Control Panel. From the Control Panel, open Programs and on the left hand side click on Turn Windows Features On or Off. Within this menu, expand Internet Information Services, expand Web Management Tools and enable IIS Management Console. Click and expand World Wide Web Services and expand Application Development Features. In Application Development Features, enable CGI and click ok to confirm.
+Before proceeding with the installation, Internet Information Services (IIS) must be enabled, as it is a necessary component for running osTicket on a virtual machine (VM) hosted in Azure. To enable IIS, open the Control Panel, navigate to Programs, and select Turn Windows features on or off from the left-hand menu. In the Windows Features dialog, expand Internet Information Services, then expand Web Management Tools, and check IIS Management Console. Next, expand World Wide Web Services, followed by Application Development Features. Under this section, enable CGI, and click OK to apply the changes.
 </p>
 <br />
 
