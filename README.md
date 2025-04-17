@@ -44,7 +44,7 @@ Before proceeding with the installation, Internet Information Services (IIS) mus
 <img src="https://i.imgur.com/Q6wtGBk.jpeg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-After enabling Internet Information Services (IIS), download and install PHP Manager for Internet Information Services (IIS) (PHPManagerforIIS_V1.5.0.msi) from the installtion files folder. Download and install the Rewrite Module (rewrite_amd64_en-US.msi) after installing PHP Manager for IIS.
+After enabling Internet Information Services (IIS), download and install PHP Manager (PHPManagerforIIS_V1.5.0.msi) from the installtion files folder. Then download and install the Rewrite Module (rewrite_amd64_en-US.msi) after installing PHP Manager.
 </p>
 <br />
 
